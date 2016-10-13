@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>夏姬霸写的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="夏姬霸写的博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="夏姬霸写的博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="夏姬霸写的博客">
+  
+    <link rel="alternate" href="/atom.xml" title="夏姬霸写的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">夏姬霸写的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记录技术的点点滴滴</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-git-中文乱码问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/12/git-中文乱码问题/" class="article-date">
+  <time datetime="2016-10-12T05:26:25.000Z" itemprop="datePublished">2016-10-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/12/git-中文乱码问题/">git 中文乱码问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="git-shell-乱码-解决"><a href="#git-shell-乱码-解决" class="headerlink" title="git shell 乱码 解决"></a>git shell 乱码 解决</h3><ol>
+<li><p>gitconfig:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">[gui]</div><div class="line">	encoding = utf-8 #代码库统一使用utf-8</div><div class="line">[i18n]</div><div class="line">	commitencoding = utf-8 # log 编码</div><div class="line">[svn]</div><div class="line">	pathnameencoding = utf-8 # 支持中文路径</div></pre></td></tr></table></figure>
+</li>
+<li><p>git-completion.sh</p>
+</li>
+<li><p>inputrc</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">set output-meta on  # bash可以输入中文</div><div class="line">set convert-meta off</div></pre></td></tr></table></figure>
+</li>
+<li><p>profile</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export LESSHARSET=utf-8</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="git-status-中文乱码解决"><a href="#git-status-中文乱码解决" class="headerlink" title="git status 中文乱码解决"></a>git status 中文乱码解决</h3><ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config core.quotepath false</div></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/12/git-中文乱码问题/" data-id="ciu8m09yg0001iwcqlq5sf6qc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MarkdownPad-2-注册码" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/10/MarkdownPad-2-注册码/" class="article-date">
+  <time datetime="2016-10-10T15:58:29.000Z" itemprop="datePublished">2016-10-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/10/MarkdownPad-2-注册码/">MarkdownPad 2 注册码</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="MarkdownPad-2-注册码"><a href="#MarkdownPad-2-注册码" class="headerlink" title="MarkdownPad 2 注册码"></a>MarkdownPad 2 注册码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">邮箱： Soar360@live.com</div><div class="line">密钥： GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/10/MarkdownPad-2-注册码/" data-id="ciu8m09yd0000iwcq7izq4lla" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo博客部署" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/10/hexo博客部署/" class="article-date">
+  <time datetime="2016-10-10T15:45:10.000Z" itemprop="datePublished">2016-10-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/10/hexo博客部署/">hexo博客部署</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h2><p>Hexo是一个快速、简洁、高效的轻量级博客框架，支持Markdown写作。</p>
+<h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><ol>
+<li>Git</li>
+<li>Node.js</li>
+</ol>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli  # 安装hexo</div><div class="line">$ mkdir hexo &amp;&amp; cd hexo &amp;&amp; hexo init # 创建目录，初始化blog</div><div class="line">$ npm install hexo-deployer-git --save  # 安装 hexo-deployer-git 插件</div><div class="line">$ hexo g # 生成本地网络文件</div><div class="line">$ hexo s # 启动预览服务</div></pre></td></tr></table></figure>
+<p>完成上述操作后， 可以打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 可以看到blog</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/10/hexo博客部署/" data-id="ciu8m09yi0002iwcqap4tzzdt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-机器学习初步认识" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/09/机器学习初步认识/" class="article-date">
+  <time datetime="2016-10-09T10:43:37.000Z" itemprop="datePublished">2016-10-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/09/机器学习初步认识/">机器学习总汇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="机器学习概述"><a href="#机器学习概述" class="headerlink" title="机器学习概述"></a><strong>机器学习概述</strong></h2><h4 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a><strong>初衷</strong></h4><p>打算学机器学习很久了， 虽然零零星星看了不少有关机器学习的文章， 也熟悉常用的算法， 但基本都局限在使用上，知其然而不知其所以然，缺乏深层次的理解， 更缺少对这一领域的整体认知。所以， 就想着利用工作之余，把这部分内容系统的学习一番。既然是系统学习，自然<br>做做笔记之类的， 正巧最近打算开通自己的博客，所以在这写下这一贴， 作为一个开端，也作为一个目录，以后会把与机器学习相关的帖子汇总到这里来， 废话不多说了， 现在开始吧。</p>
+<h3 id="机器学习简介"><a href="#机器学习简介" class="headerlink" title="机器学习简介"></a><strong>机器学习简介</strong></h3><p><a href="/2016/undefined/12/git-中文乱码问题/">123</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/09/机器学习初步认识/" data-id="ciu8m09yt000ciwcqhw8yteqw" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hive-简介" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/09/hive-简介/" class="article-date">
+  <time datetime="2016-10-09T09:39:45.000Z" itemprop="datePublished">2016-10-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/09/hive-简介/">hive 简介</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><ol>
+<li>123</li>
+<li>321<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></div><div class="line">  abc = <span class="number">1</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><p>##### </p>
+<p><img src="http://img5.imgtn.bdimg.com/it/u=1914036520,4154769857&amp;fm=21&amp;gp=0.jpg" alt="狗"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/09/hive-简介/" data-id="ciu8m09ym0004iwcq51wxu49l" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hive/">hive</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/大数据/">大数据</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hadoop/">hadoop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hive/">hive</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/大数据/">大数据</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hadoop/" style="font-size: 10px;">hadoop</a> <a href="/tags/hive/" style="font-size: 10px;">hive</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/12/git-中文乱码问题/">git 中文乱码问题</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/10/MarkdownPad-2-注册码/">MarkdownPad 2 注册码</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/10/hexo博客部署/">hexo博客部署</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/09/机器学习初步认识/">机器学习总汇</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/09/hive-简介/">hive 简介</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 夏姬<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
